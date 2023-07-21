@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Supermercado One', cursive;
+    color: white;
+    overflow: hidden;
+}
+#header{
+    height: 90vh;
+    width: auto;
+    background-color: #111111;
+    text-align: center;
+    padding-top: 7%;
+    position: relative;
+}
+.navigationUl{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(20 , 1fr);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background-color: #000;
+}
+.lis{
+    color: white;
+    padding: 10px;
+    font-size: 19px;
+    transition: linear 0.2s;
+    cursor: pointer;
+}
+.lis:hover{
+    transform: scale(1.15);
+}
+.login{
+    grid-column: 19/21;
+}
+.products{
+    grid-column: 17/19;
+}
+.buy{
+    grid-column: 15/17;
+}
+.home{
+    grid-column: 13/15;
+}
+.motor{
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: -6px;
+    margin-left: 0px;
+    display: block;
+    grid-column: 1/3;
+}
+.bigtext{
+    font-size: 100px;
+    font-weight: bolder;
+    animation: ani1 forwards 1s linear ;
+    cursor: pointer;
+}
+@keyframes ani1{
+    from{
+        margin-left: -22%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    to{
+        margin-left: 2%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.bigtext span ,.motor span{
+    color: rgb(170, 2, 2);
+}
+.imageBox{
+    margin: auto;
+    margin-top: -4%;
+    margin-right: -15%;
+    opacity: 0;
+    visibility: hidden;
+    animation: ani2 1s 1 linear forwards;
+}
+@keyframes ani2{
+    from{
+        margin-right: -22%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    to{
+        margin-right:0%;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.motorImg{
+    transform:scale(0.95);
+    top: 9%;
+    right: 10%;
+    cursor: pointer;
+}
+.iconBox{
+    position: absolute;
+    bottom: 15px;
+    left: 1%;
+    animation: ani3 0.9s 1 linear forwards;
+    cursor: pointer;
+}
+@keyframes ani3{
+    from{
+        opacity: 0;
+        visibility: hidden;
+    }
+    t{
+        opacity: 1;
+        visibility: visible;
+    }
+}
